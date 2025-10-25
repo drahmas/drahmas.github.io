@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Brutalist portfolio of Dewi – front-end developer." />
+    <title>Dewi — Brutalist Portfolio</title>
+    <!-- TailwindCSS (compiled locally) -->
+    <link rel="stylesheet" href="./src/output.css" />
+    <style>
+        /* Extra tiny utilities for brutal hover border-grow and focus outlines */
+        .border-grow { box-shadow: inset 0 0 0 0 #0e172c; transition: box-shadow 120ms linear, background-color 120ms linear, color 120ms linear; }
+        .border-grow:hover { box-shadow: inset 0 0 0 6px #0e172c; }
+        .focus-outline:focus-visible { outline: 4px solid #0e172c; outline-offset: 2px; }
+    </style>
+</head>
+<body class="bg-[#fec7d7] text-[#0e172c] font-sans">
+<!-- Site frame / header -->
+<header class="border-b-[6px] border-[#0e172c]">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+        <a href="#top" class="text-xl md:text-2xl font-bold tracking-tight uppercase">Dewi <span class="underline">Portfolio</span></a>
+        <nav class="hidden md:flex gap-6 text-sm font-bold uppercase">
+            <a class="hover:underline" href="#about">About</a>
+            <a class="hover:underline" href="#projects">Projects</a>
+            <a class="hover:underline" href="#inspiration">Inspiration</a>
+            <a class="hover:underline" href="#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main id="top" class="max-w-6xl mx-auto px-4">
+    <!-- Hero section -->
+    <section aria-labelledby="hero-heading" class="grid md:grid-cols-2 gap-6 md:gap-8 py-10 md:py-16">
+        <div class="border-[6px] border-[#0e172c] p-6 md:p-10 bg-[#f9f8fc]">
+            <h1 id="hero-heading" class="text-4xl md:text-6xl font-black leading-tight uppercase">Dewi — Front‑End Developer</h1>
+            <p class="mt-4 md:mt-6 text-lg md:text-xl max-w-prose">
+                I craft fast, accessible UIs with a bold brutalist twist. Clean code, sharp edges, thick borders.
+            </p>
+            <div class="mt-6 md:mt-8 flex flex-wrap gap-4">
+                <a href="#contact" class="border-[6px] border-[#0e172c] bg-[#0e172c] text-white px-6 py-3 font-bold uppercase focus-outline border-grow">Hire Me</a>
+                <a href="#projects" class="border-[6px] border-[#0e172c] px-6 py-3 font-bold uppercase focus-outline border-grow">See Work</a>
+            </div>
+        </div>
+        <div class="grid grid-rows-2 gap-6 md:gap-8">
+          <div class="border-[6px] border-[#0e172c] p-6 bg-[#d9d4e7]">
+            <p class="font-bold uppercase">Tagline</p>
+            <p class="text-2xl md:text-3xl font-black leading-snug">Bold Interfaces. Solid Systems. No fluff.</p>
+          </div>
+          <!-- Updated Stack card -->
+          <div class="border-[6px] border-[#0e172c] p-6 bg-[#a786df] text-white">
+            <p class="font-bold uppercase">Stack</p>
+            <div class="mt-3 grid grid-cols-2 sm:grid-cols-3 gap-3">
+                <div class="border-[4px] border-[#0e172c] bg-[#f9f8fc] text-[#0e172c] px-3 py-2 font-bold uppercase text-xs">HTML5</div>
+                <div class="border-[4px] border-[#0e172c] bg-[#f9f8fc] text-[#0e172c] px-3 py-2 font-bold uppercase text-xs">CSS</div>
+                <div class="border-[4px] border-[#0e172c] bg-[#f9f8fc] text-[#0e172c] px-3 py-2 font-bold uppercase text-xs">JavaScript</div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- About section -->
+    <section id="about" aria-labelledby="about-heading" class="py-10 md:py-16">
+        <div class="grid md:grid-cols-[1fr_320px] gap-6 md:gap-8 items-stretch">
+            <div class="border-[6px] border-[#0e172c] p-6 md:p-8 bg-[#f9f8fc]">
+                <h2 id="about-heading" class="text-3xl md:text-4xl font-black uppercase">About</h2>
+                <p class="mt-4 text-lg max-w-prose">
+                    I’m Dewi, a front‑end developer focused on building robust, accessible web experiences. I love pragmatic design systems, clean architecture, and brutalist aesthetics that don’t hide behind rounded corners.
+                </p>
+                <ul class="mt-4 list-disc pl-6">
+                    <li>Performance‑minded, Lighthouse enthusiast</li>
+                    <li>Strong on semantics & a11y</li>
+                    <li>Comfortable across the stack when needed</li>
+                </ul>
+            </div>
+            <figure class="border-[6px] border-[#0e172c] bg-[#f9f8fc] flex items-center justify-center p-0">
+                <img src="src/img/dewi.png" alt="Portrait of Dewi" class="w-full h-full object-cover" />
+            </figure>
+        </div>
+    </section>
+
+    <!-- Projects section -->
+    <section id="projects" aria-labelledby="projects-heading" class="py-10 md:py-16">
+        <h2 id="projects-heading" class="text-3xl md:text-4xl font-black uppercase">Projects</h2>
+        <div class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+            <!-- Card 1 -->
+            <article class="border-[6px] border-[#0e172c] bg-[#f9f8fc] p-6 flex flex-col">
+                <h3 class="text-xl font-black uppercase">Paper Rock Game</h3>
+                <p class="mt-3 flex-1">A simple implementation of the classic Paper Rock Scissors game using HTML, CSS, and JavaScript.</p>
+                <a href="#" class="mt-4 border-[6px] border-[#0e172c] px-4 py-2 font-bold uppercase text-center border-grow focus-outline">View</a>
+            </article>
+            <!-- Card 2 -->
+            <article class="border-[6px] border-[#0e172c] bg-[#f9f8fc] p-6 flex flex-col">
+                <h3 class="text-xl font-black uppercase">Attendance Website</h3>
+                <p class="mt-3 flex-1">Automated attendance tracking with real-time reporting.</p>
+                <a href="#" class="mt-4 border-[6px] border-[#0e172c] px-4 py-2 font-bold uppercase text-center border-grow focus-outline">View</a>
+            </article>
+            <!-- Card 3 -->
+            <article class="border-[6px] border-[#0e172c] bg-[#f9f8fc] p-6 flex flex-col">
+                <h3 class="text-xl font-black uppercase">Automatic Fill KRS</h3>
+                <p class="mt-3 flex-1">Script for fill KRS</p>
+                <a href="#" class="mt-4 border-[6px] border-[#0e172c] px-4 py-2 font-bold uppercase text-center border-grow focus-outline">View</a>
+            </article>
+        </div>
+    </section>
+
+    <!-- Inspiration section -->
+    <section id="inspiration" aria-labelledby="inspiration-heading" class="py-10 md:py-16">
+        <div class="flex items-center justify-between gap-4">
+            <h2 id="inspiration-heading" class="text-3xl md:text-4xl font-black uppercase">Inspiration</h2>
+            <button id="reload-poems" class="border-[6px] border-[#0e172c] px-4 py-2 font-bold uppercase border-grow focus-outline">Refresh</button>
+        </div>
+        <p id="poem-status" class="mt-4 font-bold" aria-live="polite"></p>
+        <div id="poems" class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"></div>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact" aria-labelledby="contact-heading" class="py-10 md:py-16">
+        <h2 id="contact-heading" class="text-3xl md:text-4xl font-black uppercase">Contact</h2>
+        <!-- Simplified to single column since Links moved to footer -->
+        <div class="mt-6 grid gap-6 md:gap-8">
+            <form id="contact-form" class="border-[6px] border-[#0e172c] bg-[#f9f8fc] p-6">
+                <div class="grid gap-4">
+                    <label class="font-bold uppercase text-sm" for="name">Name</label>
+                    <input id="name" name="name" type="text" required class="border-[4px] border-[#0e172c] px-3 py-2 focus-outline" />
+
+                    <label class="font-bold uppercase text-sm" for="email">Email</label>
+                    <input id="email" name="email" type="email" required class="border-[4px] border-[#0e172c] px-3 py-2 focus-outline" />
+
+                    <label class="font-bold uppercase text-sm" for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required class="border-[4px] border-[#0e172c] px-3 py-2 focus-outline"></textarea>
+
+                    <button type="submit" class="mt-2 border-[6px] border-[#0e172c] bg-[#0e172c] text-white px-4 py-2 font-bold uppercase border-grow focus-outline">Send</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="border-t-[6px] border-[#0e172c] mt-16">
+  <div class="max-w-6xl mx-auto px-4 py-6">
+    <!-- Moved Links here as bold brutalist buttons -->
+    <div class="grid sm:grid-cols-3 gap-4">
+      <a class="border-[6px] border-[#0e172c] bg-[#0e172c] text-white py-3 text-center font-bold uppercase border-grow focus-outline" href="#" target="_blank" rel="noopener">GitHub</a>
+      <a class="border-[6px] border-[#0e172c] bg-[#f9f8fc] text-[#0e172c] py-3 text-center font-bold uppercase border-grow focus-outline" href="#" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="border-[6px] border-[#0e172c] bg-[#d9d4e7] text-[#0e172c] py-3 text-center font-bold uppercase border-grow focus-outline" href="#" target="_blank" rel="noopener">Instagram</a>
+    </div>
+    <div class="mt-6 text-sm flex flex-col md:flex-row items-center justify-between gap-3">
+      <p class="font-bold uppercase">© <span id="year"></span> Dewi</p>
+      <p>Built with HTML5 + TailwindCSS + JavaScript</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script>
+    // Helpers
+    const $ = (sel, parent = document) => parent.querySelector(sel);
+
+    // Footer year
+    $('#year').textContent = new Date().getFullYear();
+
+    // Inspiration: PoetryDB integration
+    const poemsEl = $('#poems');
+    const statusEl = $('#poem-status');
+    const reloadBtn = $('#reload-poems');
+
+    function setStatus(text) {
+        statusEl.textContent = text || '';
+    }
+
+    function poemCard({ title, author, lines }) {
+        const firstLines = Array.isArray(lines) ? lines.slice(0, 4) : [];
+        const htmlLines = firstLines.map(l => l || '\u00A0').join('<br>');
+        const wrapper = document.createElement('article');
+        wrapper.className = 'border-[6px] border-[#0e172c] bg-[#f9f8fc] p-6 flex flex-col';
+        wrapper.innerHTML = `
+          <h3 class="text-xl font-black uppercase">${title || 'Untitled'}</h3>
+          <p class="mt-1 text-sm uppercase font-bold opacity-80">${author || 'Unknown'}</p>
+          <p class="mt-3 leading-snug">${htmlLines}</p>
+        `;
+        return wrapper;
+    }
+
+    async function loadPoems(count = 3, timeoutMs = 8000) {
+        setStatus('Loading poems...');
+        poemsEl.innerHTML = '';
+
+        const ctrl = new AbortController();
+        const t = setTimeout(() => ctrl.abort('timeout'), timeoutMs);
+        try {
+            const res = await fetch(`https://poetrydb.org/random/${count}`, { signal: ctrl.signal });
+            if (!res.ok) throw new Error('http ' + res.status);
+            const data = await res.json();
+            const list = Array.isArray(data) ? data : [];
+            if (list.length === 0) throw new Error('empty');
+
+            list.forEach(p => poemsEl.appendChild(poemCard(p)));
+            setStatus('');
+        } catch (err) {
+            console.error('PoetryDB error', err);
+            setStatus('Failed to load poems');
+        } finally {
+            clearTimeout(t);
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        loadPoems();
+        reloadBtn?.addEventListener('click', () => loadPoems());
+    });
+
+    // Contact form -> mailto launcher (no backend)
+    $('#contact-form').addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = $('#name').value.trim();
+        const email = $('#email').value.trim();
+        const message = $('#message').value.trim();
+        const subj = encodeURIComponent(`Portfolio inquiry from ${name || 'Someone'}`);
+        const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
+        window.location.href = `mailto:hello@example.com?subject=${subj}&body=${body}`;
+    });
+</script>
+</body>
